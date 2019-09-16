@@ -4,3 +4,10 @@
 
 a = 11
 b = 42
+
+c = a
+a = b
+b = c
+
+print("valeur de a : ", a)
+print("valeur de b : ", b)

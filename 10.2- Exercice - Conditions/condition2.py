@@ -7,3 +7,21 @@
 #                       Sinon, elle est bissextile.
 #
 # Résultat attendu : Un message affichant "Année bissextile" ou "Année non bissextile"
+
+import datetime
+now = datetime.datetime.now()
+
+annee = now.year
+
+annee = 2026
+
+if(annee % 4 != 0):
+    print("Année non bissextile")
+else:
+    if(annee % 100 == 0):
+        if(annee % 400 == 0):
+            print("Année bissextile")
+        else:
+            print("Année non bissextile")
+    else:
+        print("Année bissextile")
