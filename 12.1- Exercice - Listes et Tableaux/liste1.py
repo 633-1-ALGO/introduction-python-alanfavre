@@ -8,15 +8,15 @@
 liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 header = "x "
 
-for i in range(1, 11):
-    header += str(i) + " "
+for x in liste:
+    header += str(x) + " "
 
 print(header)
 
-for i in range(1, 11):
+for x in liste:
     result = ""
 
     for j in range(1, 11):
-        result += " " + str(i * j)
+        result += " " + str(x * j)
 
-    print(str(i) + result)
+    print(str(x) + result)

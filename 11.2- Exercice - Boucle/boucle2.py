@@ -4,8 +4,7 @@
 
 B = [2, 6, 8, 5, 4, 12, 98, 34, 1]
 
-for i in range(1, len(B)):
-
+for i in range(0, len(B)):
     key = B[i]
 
     j = i-1
