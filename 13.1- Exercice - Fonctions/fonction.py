@@ -4,3 +4,10 @@ texte = "ceci est un texte que vous pouvez modifier mais gare aux caracteres spe
 tab_lettres = [
     ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
      'x', 'y', 'z', ' '], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+def nbOccurances(texte):
+    for c in texte:
+        tab_lettres[1][tab_lettres[0].index(c)] += 1
+
+nbOccurances(texte)
+print(tab_lettres)

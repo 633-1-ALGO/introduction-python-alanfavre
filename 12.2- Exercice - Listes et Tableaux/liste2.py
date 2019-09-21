@@ -15,5 +15,3 @@ for i in range(0, len(tab)):
             index_m = y
 
 print("La valeur maximum est : " + str(max_value) + " et elle se trouve à l'indice : [" + str(index_n) + "][" + str(index_m) + "].")
-
-
