@@ -13,15 +13,15 @@ now = datetime.datetime.now()
 
 annee = now.year
 
-annee = 2026
+print("L'année " + str(annee) + " est ")
 
 if(annee % 4 != 0):
-    print("Année non bissextile")
+    print("non bissextile")
 else:
     if(annee % 100 == 0):
         if(annee % 400 == 0):
-            print("Année bissextile")
+            print("bissextile")
         else:
-            print("Année non bissextile")
+            print("non bissextile")
     else:
-        print("Année bissextile")
+        print("bissextile")
