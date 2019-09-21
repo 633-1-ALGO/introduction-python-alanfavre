@@ -3,3 +3,15 @@
 # Résultat attendu : Le tableau B trié
 
 B = [2, 6, 8, 5, 4, 12, 98, 34, 1]
+
+for i in range(1, len(B)):
+
+    key = B[i]
+
+    j = i-1
+    while j >= 0 and key < B[j]:
+        B[j+1] = B[j]
+        j -= 1
+    B[j+1] = key
+
+print(B)

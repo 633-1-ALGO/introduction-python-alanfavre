@@ -6,3 +6,17 @@
 # Indication :   L'alignement rectiligne n'est pas une contrainte, tant que la table est visible ligne par ligne c'est ok.
 #               Si vous êtes perfectionnistes faites vous plaisir.
 liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+header = "x "
+
+for i in range(1, 11):
+    header += str(i) + " "
+
+print(header)
+
+for i in range(1, 11):
+    result = ""
+
+    for j in range(1, 11):
+        result += " " + str(i * j)
+
+    print(str(i) + result)
